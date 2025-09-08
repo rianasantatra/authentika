@@ -84,12 +84,34 @@ body.dark-mode .hover-lift:hover {
 .nav-link,
 .text-body {
   color: var(--link-color) !important;
-  transition: color 0.5s ease;
 }
 
 .nav-link:hover,
 .text-body:hover {
   color: var(--link-hover-color) !important;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Le bouton de bascule a son propre style pour rester cohérent */
