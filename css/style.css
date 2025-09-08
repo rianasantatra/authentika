@@ -1,0 +1,84 @@
+/* Section About */
+.about-image-wrapper {
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .display-5 {
+    font-size: 3rem;
+  }
+  .about-main-image {
+    margin-left: 20px;
+  }
+}
+
+/* Portfolio Section */
+.portfolio-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Contact Section */
+.contact-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.form-control-lg {
+  padding: 1rem;
+}
+
+/* Section Cards */
+.service-card {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border */
+  overflow: hidden; /* Ensures shadow is contained */
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02); /* Lifts and slightly scales */
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* Deeper shadow on hover */
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background-color: var(--mdb-primary-rgb, 13, 110, 253) / 10%; /* Fallback for transparency */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-card:hover .icon-circle {
+  background-color: var(--mdb-primary-rgb, 13, 110, 253) / 20%; /* Darker background on hover */
+}
+
+.icon-circle i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover .icon-circle i {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+/* Adjust section padding for better visual balance */
+.py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
