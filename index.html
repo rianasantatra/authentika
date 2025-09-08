@@ -19,6 +19,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.min.css"
       rel="stylesheet"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -26,7 +28,9 @@
   <body>
     <!--navigation-->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-body-tertiary shadow-sm"
+      >
         <div class="container">
           <button
             data-mdb-collapse-init
@@ -45,6 +49,7 @@
                 src="images/logo.jpg"
                 alt="authentika logo"
                 height="50"
+                width="50"
                 class="rounded-circle"
               />
             </a>
@@ -65,6 +70,15 @@
                 <a class="btn btn-primary btn-rounded" href="#contact"
                   >Contact</a
                 >
+              </li>
+              <li class="nav-item d-flex align-items-center ms-3">
+                <button
+                  type="button"
+                  id="theme-toggle"
+                  class="btn btn-link nav-link p-0 text-dark"
+                >
+                  <i class="fas fa-moon"></i>
+                </button>
               </li>
             </ul>
           </div>
@@ -88,12 +102,11 @@
 
     <!--layout-->
     <main>
-      <!-- À propos Section -->
       <section id="a-propos" class="py-5 bg-light">
         <div class="container">
           <div class="row align-items-center flex-lg-row-reverse g-5">
             <div class="col-lg-6">
-              <div class="about-image-wrapper text-center">
+              <div class="about-image-wrapper text-center" data-aos="fade-up">
                 <img
                   src="images/hero.jpg"
                   alt="Portrait de la fondatrice d'Authentika MDG"
@@ -102,9 +115,8 @@
                 />
               </div>
             </div>
-
             <div class="col-lg-6">
-              <div class="p-lg-4">
+              <div class="p-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <h2
                   class="fw-bold text-dark display-5 mb-4 text-center text-lg-start"
                 >
@@ -145,10 +157,9 @@
         </div>
       </section>
 
-      <!-- Pourquoi Section -->
       <section id="pourquoi-choisir" class="py-5 bg-white">
         <div class="container">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5" data-aos="fade-up">
             <h2 class="fw-bold text-dark display-5 mb-3">
               Pourquoi nous choisir
             </h2>
@@ -157,11 +168,14 @@
               envers nos clients pour garantir votre réussite.
             </p>
           </div>
-
           <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div
-                class="card h-100 border-0 rounded-4 service-card hover-lift"
+                class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift"
               >
                 <div class="card-body text-center p-4 p-md-5">
                   <div
@@ -179,10 +193,13 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div
-                class="card h-100 border-0 rounded-4 service-card hover-lift"
+                class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift"
               >
                 <div class="card-body text-center p-4 p-md-5">
                   <div
@@ -200,10 +217,13 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <div
-                class="card h-100 border-0 rounded-4 service-card hover-lift"
+                class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift"
               >
                 <div class="card-body text-center p-4 p-md-5">
                   <div
@@ -224,10 +244,9 @@
         </div>
       </section>
 
-      <!-- Services Section -->
       <section id="services" class="py-6 bg-light text-center">
         <div class="container">
-          <div class="mb-5">
+          <div class="mb-5" data-aos="fade-up">
             <h2 class="fw-bold text-dark display-5 mb-3">Nos Services</h2>
             <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
               Nous accompagnons les entreprises et les créateurs dans leur
@@ -240,9 +259,12 @@
               <strong class="text-success">300 000 MGA</strong>
             </p>
           </div>
-
           <div class="row g-5 justify-content-center">
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div
                 class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
               >
@@ -263,8 +285,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div
                 class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
               >
@@ -285,8 +310,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <div
                 class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
               >
@@ -307,8 +335,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
               <div
                 class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
               >
@@ -331,10 +362,9 @@
         </div>
       </section>
 
-      <!-- Portfolio Section -->
       <section id="portfolio" class="py-5 bg-light">
         <div class="container py-lg-5">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5" data-aos="fade-up">
             <h2 class="fw-bold text-dark display-5 mb-3">Notre Portfolio</h2>
             <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
               Découvrez nos récentes créations et le travail que nous avons
@@ -342,9 +372,12 @@
               engagement et de notre passion.
             </p>
           </div>
-
           <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div
                 class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift"
               >
@@ -365,8 +398,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div
                 class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift"
               >
@@ -386,8 +422,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <div
                 class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift"
               >
@@ -412,11 +451,84 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
+      <section id="equipe" class="py-5 bg-white">
+        <div class="container py-lg-5">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold text-dark display-5 mb-3">Notre Équipe</h2>
+            <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
+              Faites connaissance avec les visages derrière Authentika MDG.
+              Notre passion et notre expertise sont le moteur de votre succès.
+            </p>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift"
+              >
+                <div class="card-body p-4">
+                  <img
+                    src="images/ceo.jpg"
+                    class="img-fluid rounded-circle mb-3 shadow"
+                    alt="Portrait de la Directrice Créative"
+                    style="width: 150px; height: 150px; object-fit: cover"
+                    loading="lazy"
+                  />
+                  <h5 class="fw-bold text-dark mb-1">Riana Salohy</h5>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift"
+              >
+                <div class="card-body p-4">
+                  <img
+                    src="images/t1.jpg"
+                    class="img-fluid rounded-circle mb-3 shadow"
+                    alt="Portrait du Responsable Stratégie Digitale"
+                    style="width: 150px; height: 150px; object-fit: cover"
+                    loading="lazy"
+                  />
+                  <h5 class="fw-bold text-dark mb-1">Mitia Iangotiana</h5>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift"
+              >
+                <div class="card-body p-4">
+                  <img
+                    src="images/t2.jpg"
+                    class="img-fluid rounded-circle mb-3 shadow"
+                    alt="Portrait du Responsable Stratégie Digitale"
+                    style="width: 150px; height: 150px; object-fit: cover"
+                    loading="lazy"
+                  />
+                  <h5 class="fw-bold text-dark mb-1">Jane Doe</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="py-5 bg-white">
         <div class="container py-lg-5">
           <div class="row g-5 align-items-center">
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-up">
               <h2 class="fw-bold text-dark display-5 mb-3">Contactez-nous</h2>
               <p class="text-muted fs-5 mb-4">
                 Prêt à amplifier votre présence en ligne ? Remplissez le
@@ -482,11 +594,12 @@
                 </button>
               </form>
             </div>
-
             <div class="col-lg-5">
               <div class="d-grid gap-4">
                 <div
                   class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                 >
                   <div class="d-flex align-items-start">
                     <i
@@ -494,12 +607,14 @@
                     ></i>
                     <div>
                       <h5 class="fw-bold text-dark mb-1">Appelez-nous</h5>
-                      <p class="text-muted mb-0">+261 34 66 963 27</p>
+                      <p class="text-muted mb-0">+261 34 XX XXX XX</p>
                     </div>
                   </div>
                 </div>
                 <div
                   class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
                 >
                   <div class="d-flex align-items-start">
                     <i
@@ -509,14 +624,14 @@
                       <h5 class="fw-bold text-dark mb-1">
                         Envoyez-nous un Email
                       </h5>
-                      <p class="text-muted mb-0">
-                        rianasalohyrazafindravao@gmail.com
-                      </p>
+                      <p class="text-muted mb-0">authentika.mdg@gmail.com</p>
                     </div>
                   </div>
                 </div>
                 <div
                   class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
                 >
                   <div class="d-flex align-items-start">
                     <i
@@ -555,16 +670,48 @@
       </section>
     </main>
 
-    <!--footer-->
     <footer class="text-center bg-body-tertiary">
+      <div class="container pt-4">
+        <section class="mb-4">
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://web.facebook.com/profile.php?id=61579331963153"
+            role="button"
+            data-mdb-ripple-color="dark"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="https://www.instagram.com/aut.hentika/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </section>
+      </div>
       <div
         class="text-center p-3"
         style="background-color: rgba(0, 0, 0, 0.05)"
       >
-        © 22025 Copyright |
-        <a class="text-body" href="https://authentika.vercel.app/"
-          >Authentika MDG</a
-        >
+        © 2025 Copyright |
+        <a class="text-body fw-semibold" href="/">Authentika MDG</a>
       </div>
     </footer>
 
@@ -572,5 +719,37 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.umd.min.js"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const icon = themeToggleBtn.querySelector("i");
+
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.body.classList.add(currentTheme);
+        if (currentTheme === "dark-mode") {
+          icon.classList.remove("fa-moon");
+          icon.classList.add("fa-sun");
+        }
+      }
+
+      themeToggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDarkMode = document.body.classList.contains("dark-mode");
+
+        if (isDarkMode) {
+          localStorage.setItem("theme", "dark-mode");
+          icon.classList.remove("fa-moon");
+          icon.classList.add("fa-sun");
+        } else {
+          localStorage.setItem("theme", "light-mode");
+          icon.classList.remove("fa-sun");
+          icon.classList.add("fa-moon");
+        }
+      });
+    </script>
   </body>
 </html>
