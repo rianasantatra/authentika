@@ -1,667 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Authentika MDG</title>
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.min.css"
-      rel="stylesheet"
-    />
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- CUSTOM CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!--navigation-->
-    <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-body-tertiary shadow-sm"
-      >
-        <div class="container">
-          <button
-            data-mdb-collapse-init
-            class="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a href="#" class="navbar-brand mt-2 mt-lg-0">
-              <img
-                src="images/logo.jpg"
-                alt="authentika logo"
-                height="50"
-                width="50"
-                class="rounded-circle"
-              />
-            </a>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#a-propos">À propos</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#pourquoi-choisir">Pourquoi</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item ms-3">
-                <a class="btn btn-primary btn-rounded" href="#contact"
-                  >Contact</a
-                >
-              </li>
-              <li class="nav-item d-flex align-items-center ms-3">
-                <button
-                  type="button"
-                  id="theme-toggle"
-                  class="btn btn-link nav-link p-0 text-dark"
-                >
-                  <i class="fas fa-moon"></i>
-                </button>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authentika MDG</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--navigation-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary shadow-sm">
+      <div class="container">
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="/" class="navbar-brand mt-2 mt-lg-0">
+            <img src="images/logo.jpg" alt="authentika logo" height="50" width="50" class="rounded-circle" />
+          </a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#a-propos">À propos</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#pourquoi-choisir">Pourquoi</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item d-flex align-items-center ms-3">
+              <button type="button" id="theme-toggle" class="btn btn-link nav-link p-0 text-dark">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <div
-        class="bg-image"
-        style="
+      </div>
+    </nav>
+    <div class="bg-image" style="
           background-image: url('images/banner.png');
           height: 400px;
           background-size: cover;
           background-position: center;
-        "
-      >
-        <div
-          class="mask"
-          style="background-color: rgba(0, 0, 0, 0.155); height: 100%"
-        ></div>
-      </div>
-    </header>
+        ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.155); height: 100%"></div>
+    </div>
+  </header>
 
-    <!--layout-->
-    <main>
-      <section id="a-propos" class="py-5 bg-light">
-        <div class="container">
-          <div class="row align-items-center flex-lg-row-reverse g-5">
-            <div class="col-lg-6">
-              <div class="about-image-wrapper text-center" data-aos="fade-up">
-                <img
-                  src="images/hero.jpg"
-                  alt="Portrait de la fondatrice d'Authentika MDG"
-                  class="img-fluid rounded-5 shadow-lg about-main-image"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <h2
-                  class="fw-bold text-dark display-5 mb-4 text-center text-lg-start"
-                >
-                  Authentika MDG
-                  <span class="d-block fw-light fs-4 text-primary mt-2"
-                    >La passion au service de votre réussite</span
-                  >
-                </h2>
-                <p class="text-muted lead mb-4">
-                  Quand j’ai commencé, je n’avais ni toutes les réponses, ni une
-                  grande expérience. Une chose est sûre, j'avais la **volonté
-                  d’apprendre et de me dépasser**. Ces années m'ont appris à
-                  écouter, à créer du lien, et surtout, à croire en la valeur
-                  que je pouvais apporter.
-                </p>
-                <p class="text-muted mb-4">
-                  J’ai compris que chaque difficulté était une **opportunité
-                  déguisée**. C’est ainsi qu’est née **Authentika**, un espace
-                  où la créativité, la stratégie et l’authenticité se
-                  rencontrent pour transformer des projets en réussites.
-                </p>
-                <p class="text-muted mb-4">
-                  Peu importe d’où vous partez, si vous y croyez et que vous
-                  travaillez avec passion, vous pouvez écrire votre propre
-                  avenir.
-                </p>
-                <div class="text-center text-lg-start">
-                  <a
-                    href="#contact"
-                    class="btn btn-primary btn-rounded btn-lg mt-3"
-                  >
-                    Contactez-moi
-                  </a>
-                </div>
-              </div>
+  <!--layout-->
+  <main>
+    <section id="a-propos" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center flex-lg-row-reverse g-5">
+          <div class="col-lg-6">
+            <div class="about-image-wrapper text-center" data-aos="fade-up">
+              <img src="images/hero.jpg" alt="Portrait de la fondatrice d'Authentika MDG"
+                class="img-fluid rounded-5 shadow-lg about-main-image" loading="lazy" />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="pourquoi-choisir" class="py-5 bg-white">
-        <div class="container">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <h2 class="fw-bold text-dark display-5 mb-3">
-              Pourquoi nous choisir
-            </h2>
-            <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
-              Trois piliers qui définissent notre approche et notre engagement
-              envers nos clients pour garantir votre réussite.
-            </p>
-          </div>
-          <div class="row g-4 justify-content-center">
-            <div
-              class="col-lg-4 col-md-6 mb-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift"
-              >
-                <div class="card-body text-center p-4 p-md-5">
-                  <div
-                    class="icon-circle mb-4 mx-auto"
-                    style="background-color: rgba(52, 168, 83, 0.1)"
-                  >
-                    <i class="fas fa-leaf fa-3x text-success"></i>
-                  </div>
-                  <h5 class="fw-bold text-dark mb-3">Authentique</h5>
-                  <p class="text-muted mb-0">
-                    Nous valorisons la transparence, la simplicité et une
-                    communication sincère. Chaque projet reflète une identité
-                    vraie et locale.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 mb-4"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div
-                class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift"
-              >
-                <div class="card-body text-center p-4 p-md-5">
-                  <div
-                    class="icon-circle mb-4 mx-auto"
-                    style="background-color: rgba(66, 133, 244, 0.1)"
-                  >
-                    <i class="fas fa-handshake fa-3x text-primary"></i>
-                  </div>
-                  <h5 class="fw-bold text-dark mb-3">Engagé</h5>
-                  <p class="text-muted mb-0">
-                    Nous nous impliquons pleinement dans chaque mission, avec
-                    une attention particulière aux besoins des entrepreneurs
-                    locaux.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 mb-4"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div
-                class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift"
-              >
-                <div class="card-body text-center p-4 p-md-5">
-                  <div
-                    class="icon-circle mb-4 mx-auto"
-                    style="background-color: rgba(251, 188, 5, 0.1)"
-                  >
-                    <i class="fas fa-lightbulb fa-3x text-warning"></i>
-                  </div>
-                  <h5 class="fw-bold text-dark mb-3">Stratégique</h5>
-                  <p class="text-muted mb-0">
-                    Chaque action est pensée pour maximiser votre impact :
-                    ciblage, planification et optimisation continue.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="py-6 bg-light text-center">
-        <div class="container">
-          <div class="mb-5" data-aos="fade-up">
-            <h2 class="fw-bold text-dark display-5 mb-3">Nos Services</h2>
-            <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
-              Nous accompagnons les entreprises et les créateurs dans leur
-              stratégie digitale, en proposant des solutions **personnalisées,
-              innovantes et efficaces** pour transformer votre présence en
-              ligne.
-            </p>
-            <p class="text-primary fs-4 fw-bold mt-4">
-              Tarifs à partir de
-              <strong class="text-success">300 000 MGA</strong>
-            </p>
-          </div>
-          <div class="row g-5 justify-content-center">
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
-              >
-                <div class="card-body p-4 p-md-5">
-                  <div
-                    class="icon-circle mb-4 mx-auto bg-primary bg-opacity-10"
-                  >
-                    <i class="fas fa-pen-nib fa-3x text-primary"></i>
-                  </div>
-                  <h5 class="card-title fw-bold text-dark mb-3">
-                    Création de contenu
-                  </h5>
-                  <p class="card-text text-muted mb-0">
-                    Rédaction d'articles captivants, conception de visuels
-                    percutants et production de vidéos engageantes, parfaitement
-                    adaptés à votre audience et à vos objectifs digitaux.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div
-                class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
-              >
-                <div class="card-body p-4 p-md-5">
-                  <div
-                    class="icon-circle mb-4 mx-auto bg-success bg-opacity-10"
-                  >
-                    <i class="fas fa-chart-line fa-3x text-success"></i>
-                  </div>
-                  <h5 class="card-title fw-bold text-dark mb-3">
-                    Stratégie Digitale
-                  </h5>
-                  <p class="card-text text-muted mb-0">
-                    Élaboration d'un plan d'action numérique sur mesure,
-                    optimisé pour maximiser votre visibilité en ligne et
-                    atteindre vos cibles commerciales.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div
-                class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
-              >
-                <div class="card-body p-4 p-md-5">
-                  <div
-                    class="icon-circle mb-4 mx-auto bg-warning bg-opacity-10"
-                  >
-                    <i class="fas fa-calendar-alt fa-3x text-warning"></i>
-                  </div>
-                  <h5 class="card-title fw-bold text-dark mb-3">
-                    Planning Éditorial
-                  </h5>
-                  <p class="card-text text-muted mb-0">
-                    Organisation stratégique et calendaire de vos publications,
-                    garantissant une communication cohérente, pertinente et
-                    impactante sur toutes vos plateformes.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              <div
-                class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift"
-              >
-                <div class="card-body p-4 p-md-5">
-                  <div class="icon-circle mb-4 mx-auto bg-info bg-opacity-10">
-                    <i class="fas fa-search-dollar fa-3x text-info"></i>
-                  </div>
-                  <h5 class="card-title fw-bold text-dark mb-3">
-                    Audit & Analyse
-                  </h5>
-                  <p class="card-text text-muted mb-0">
-                    Évaluation approfondie de vos performances digitales
-                    actuelles et élaboration de recommandations concrètes pour
-                    une amélioration continue et des résultats mesurables.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="py-5 bg-light">
-        <div class="container py-lg-5">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <h2 class="fw-bold text-dark display-5 mb-3">Notre Portfolio</h2>
-            <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
-              Découvrez nos récentes créations et le travail que nous avons
-              accompli pour nos clients. Chaque projet est le reflet de notre
-              engagement et de notre passion.
-            </p>
-          </div>
-          <div class="row g-4 justify-content-center">
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift"
-              >
-                <img
-                  src="images/p-1.jpg"
-                  class="card-img-top rounded-4"
-                  alt="Exemple de projet de création de contenu"
-                  loading="lazy"
-                />
-                <div class="card-body p-4 text-center">
-                  <h5 class="card-title fw-bold text-dark mb-1">
-                    Création de Contenu
-                  </h5>
-                  <p class="card-text text-muted mb-3">
-                    Une série de visuels percutants pour une campagne de
-                    lancement.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div
-                class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift"
-              >
-                <img
-                  src="images/p-2.jpg"
-                  class="card-img-top rounded-4"
-                  alt="Exemple de projet de stratégie digitale"
-                  loading="lazy"
-                />
-                <div class="card-body p-4 text-center">
-                  <h5 class="card-title fw-bold text-dark mb-1">
-                    Stratégie Digitale
-                  </h5>
-                  <p class="card-text text-muted mb-3">
-                    Refonte de la stratégie social media pour une marque locale.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div
-                class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift"
-              >
-                <img
-                  src="images/p-3.jpg"
-                  class="card-img-top rounded-4"
-                  alt="Exemple de projet de planning éditorial"
-                  loading="lazy"
-                />
-                <div class="card-body p-4 text-center">
-                  <h5 class="card-title fw-bold text-dark mb-1">
-                    Planning Éditorial
-                  </h5>
-                  <p class="card-text text-muted mb-3">
-                    Mise en place d'un calendrier de publication pour un
-                    créateur.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="equipe" class="py-5 bg-white">
-        <div class="container py-lg-5">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <h2 class="fw-bold text-dark display-5 mb-3">Notre Équipe</h2>
-            <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
-              Faites connaissance avec les visages derrière Authentika MDG.
-              Notre passion et notre expertise sont le moteur de votre succès.
-            </p>
-          </div>
-          <div class="row g-4 justify-content-center">
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift"
-              >
-                <div class="card-body p-4">
-                  <img
-                    src="images/ceo.jpg"
-                    class="img-fluid rounded-circle mb-3 shadow"
-                    alt="Portrait de la Directrice Créative"
-                    style="width: 150px; height: 150px; object-fit: cover"
-                    loading="lazy"
-                  />
-                  <h5 class="fw-bold text-dark mb-1">Riana Salohy</h5>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div
-                class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift"
-              >
-                <div class="card-body p-4">
-                  <img
-                    src="images/t1.jpg"
-                    class="img-fluid rounded-circle mb-3 shadow"
-                    alt="Portrait du Responsable Stratégie Digitale"
-                    style="width: 150px; height: 150px; object-fit: cover"
-                    loading="lazy"
-                  />
-                  <h5 class="fw-bold text-dark mb-1">Mitia Iangotiana</h5>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div
-                class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift"
-              >
-                <div class="card-body p-4">
-                  <img
-                    src="images/t2.jpg"
-                    class="img-fluid rounded-circle mb-3 shadow"
-                    alt="Portrait du Responsable Stratégie Digitale"
-                    style="width: 150px; height: 150px; object-fit: cover"
-                    loading="lazy"
-                  />
-                  <h5 class="fw-bold text-dark mb-1">Jane Doe</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="py-5 bg-white">
-        <div class="container py-lg-5">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-7" data-aos="fade-up">
-              <h2 class="fw-bold text-dark display-5 mb-3">Contactez-nous</h2>
-              <p class="text-muted fs-5 mb-4">
-                Prêt à amplifier votre présence en ligne ? Remplissez le
-                formulaire ci-dessous pour démarrer votre projet.
+          <div class="col-lg-6">
+            <div class="p-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="fw-bold text-dark display-5 mb-4 text-center text-lg-start">
+                Authentika MDG
+                <span class="d-block fw-light fs-4 text-primary mt-2">La passion au service de votre réussite</span>
+              </h2>
+              <p class="text-muted lead mb-4">
+                Quand j’ai commencé, je n’avais ni toutes les réponses, ni une
+                grande expérience. Une chose est sûre, j'avais la <strong>volonté
+                  d’apprendre et de me dépasser</strong>. Ces années m'ont appris à
+                écouter, à créer du lien, et surtout, à croire en la valeur
+                que je pouvais apporter.
               </p>
-              <form action="#" method="post">
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <div data-mdb-input-init class="form-outline">
-                      <input
-                        type="text"
-                        id="formName"
-                        class="form-control form-control-lg"
-                        required
-                      />
-                      <label class="form-label" for="formName"
-                        >Nom & Prénom</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div data-mdb-input-init class="form-outline">
-                      <input
-                        type="email"
-                        id="formEmail"
-                        class="form-control form-control-lg"
-                        required
-                      />
-                      <label class="form-label" for="formEmail"
-                        >Adresse Email</label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div data-mdb-input-init class="form-outline">
-                      <input
-                        type="text"
-                        id="formSubject"
-                        class="form-control form-control-lg"
-                      />
-                      <label class="form-label" for="formSubject">Sujet</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div data-mdb-input-init class="form-outline">
-                      <textarea
-                        class="form-control"
-                        id="formMessage"
-                        rows="5"
-                        required
-                      ></textarea>
-                      <label class="form-label" for="formMessage"
-                        >Votre Message</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-lg btn-rounded mt-4"
-                >
-                  Envoyer le Message
-                </button>
-              </form>
+              <p class="text-muted mb-4">
+                J’ai compris que chaque difficulté était une <strong>opportunité
+                  déguisée</strong>. C’est ainsi qu’est née <strong>Authentika</strong>, un espace
+                où la créativité, la stratégie et l’authenticité se
+                rencontrent pour transformer des projets en réussites.
+              </p>
+              <p class="text-muted mb-4">
+                Peu importe d’où vous partez, si vous y croyez et que vous
+                travaillez avec passion, vous pouvez écrire votre propre
+                avenir.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#contact" class="btn btn-primary btn-rounded btn-lg mt-3">
+                  Contactez-moi
+                </a>
+              </div>
             </div>
-            <div class="col-lg-5">
-              <div class="d-grid gap-4">
-                <div
-                  class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <div class="d-flex align-items-start">
-                    <i
-                      class="fas fa-phone-alt fa-2x text-primary me-3 flex-shrink-0"
-                    ></i>
-                    <div>
-                      <h5 class="fw-bold text-dark mb-1">Appelez-nous</h5>
-                      <p class="text-muted mb-0">+261 34 66 963 27</p>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pourquoi-choisir" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold text-dark display-5 mb-3">
+            Pourquoi nous choisir
+          </h2>
+          <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
+            Trois piliers qui définissent notre approche et notre engagement
+            envers nos clients pour garantir votre réussite.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift">
+              <div class="card-body text-center p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto" style="background-color: rgba(52, 168, 83, 0.1)">
+                  <i class="fas fa-leaf fa-3x text-success"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-3">Authentique</h5>
+                <p class="text-muted mb-0">
+                  Nous valorisons la transparence, la simplicité et une
+                  communication sincère. Chaque projet reflète une identité
+                  vraie et locale.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift">
+              <div class="card-body text-center p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto" style="background-color: rgba(66, 133, 244, 0.1)">
+                  <i class="fas fa-handshake fa-3x text-primary"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-3">Engagé</h5>
+                <p class="text-muted mb-0">
+                  Nous nous impliquons pleinement dans chaque mission, avec
+                  une attention particulière aux besoins des entrepreneurs
+                  locaux.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card h-100 border-0 rounded-4 shadow-sm service-card hover-lift">
+              <div class="card-body text-center p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto" style="background-color: rgba(251, 188, 5, 0.1)">
+                  <i class="fas fa-lightbulb fa-3x text-warning"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-3">Stratégique</h5>
+                <p class="text-muted mb-0">
+                  Chaque action est pensée pour maximiser votre impact :
+                  ciblage, planification et optimisation continue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-6 bg-light text-center">
+      <div class="container">
+        <div class="mb-5" data-aos="fade-up">
+          <h2 class="fw-bold text-dark display-5 mb-3">Nos Services</h2>
+          <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
+            Nous accompagnons les entreprises et les créateurs dans leur
+            stratégie digitale, en proposant des solutions personnalisées,
+            innovantes et efficaces pour transformer votre présence en
+            ligne.
+          </p>
+        </div>
+        <div class="row g-5 justify-content-center">
+          <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift">
+              <div class="card-body p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto bg-primary bg-opacity-10">
+                  <i class="fas fa-pen-nib fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title fw-bold text-dark mb-3">
+                  Création de contenu
+                </h5>
+                <p class="card-text text-muted mb-0">
+                  Rédaction d'articles captivants, conception de visuels
+                  percutants et production de vidéos engageantes, parfaitement
+                  adaptés à votre audience et à vos objectifs digitaux.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift">
+              <div class="card-body p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto bg-success bg-opacity-10">
+                  <i class="fas fa-chart-line fa-3x text-success"></i>
+                </div>
+                <h5 class="card-title fw-bold text-dark mb-3">
+                  Stratégie Digitale
+                </h5>
+                <p class="card-text text-muted mb-0">
+                  Élaboration d'un plan d'action numérique sur mesure,
+                  optimisé pour maximiser votre visibilité en ligne et
+                  atteindre vos cibles commerciales.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift">
+              <div class="card-body p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto bg-warning bg-opacity-10">
+                  <i class="fas fa-calendar-alt fa-3x text-warning"></i>
+                </div>
+                <h5 class="card-title fw-bold text-dark mb-3">
+                  Planning Éditorial
+                </h5>
+                <p class="card-text text-muted mb-0">
+                  Organisation stratégique et calendaire de vos publications,
+                  garantissant une communication cohérente, pertinente et
+                  impactante sur toutes vos plateformes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="card h-100 border-0 shadow-lg rounded-4 service-card hover-lift">
+              <div class="card-body p-4 p-md-5">
+                <div class="icon-circle mb-4 mx-auto bg-info bg-opacity-10">
+                  <i class="fas fa-search-dollar fa-3x text-info"></i>
+                </div>
+                <h5 class="card-title fw-bold text-dark mb-3">
+                  Audit & Analyse
+                </h5>
+                <p class="card-text text-muted mb-0">
+                  Évaluation approfondie de vos performances digitales
+                  actuelles et élaboration de recommandations concrètes pour
+                  une amélioration continue et des résultats mesurables.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container py-lg-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold text-dark display-5 mb-3">Notre Portfolio</h2>
+          <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
+            Découvrez nos récentes créations et le travail que nous avons
+            accompli pour nos clients. Chaque projet est le reflet de notre
+            engagement et de notre passion.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift">
+              <img src="images/p-1.jpg" class="card-img-top rounded-4" alt="Exemple de projet de création de contenu"
+                loading="lazy" />
+              <div class="card-body p-4 text-center">
+                <h5 class="card-title fw-bold text-dark mb-1">
+                  Création de Contenu
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Une série de visuels percutants pour une campagne de
+                  lancement.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift">
+              <img src="images/p-2.jpg" class="card-img-top rounded-4" alt="Exemple de projet de stratégie digitale"
+                loading="lazy" />
+              <div class="card-body p-4 text-center">
+                <h5 class="card-title fw-bold text-dark mb-1">
+                  Stratégie Digitale
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Refonte de la stratégie social media pour une marque locale.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card h-100 border-0 rounded-4 shadow-sm portfolio-card hover-lift">
+              <img src="images/p-3.jpg" class="card-img-top rounded-4" alt="Exemple de projet de planning éditorial"
+                loading="lazy" />
+              <div class="card-body p-4 text-center">
+                <h5 class="card-title fw-bold text-dark mb-1">
+                  Planning Éditorial
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Mise en place d'un calendrier de publication pour un
+                  créateur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="py-5 bg-white">
+      <div class="container py-lg-5">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold text-dark display-5 mb-3">Notre Équipe</h2>
+          <p class="text-muted fs-5 mx-auto" style="max-width: 700px">
+            Faites connaissance avec les visages derrière Authentika MDG.
+            Notre passion et notre expertise sont le moteur de votre succès.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift">
+              <div class="card-body p-4">
+                <img src="images/ceo.jpg" class="img-fluid rounded-circle mb-3 shadow"
+                  alt="Portrait de la Directrice Créative" style="width: 150px; height: 150px; object-fit: cover"
+                  loading="lazy" />
+                <h5 class="fw-bold text-dark mb-1">Riana Salohy</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift">
+              <div class="card-body p-4">
+                <img src="images/t1.jpg" class="img-fluid rounded-circle mb-3 shadow"
+                  alt="Portrait du Responsable Stratégie Digitale"
+                  style="width: 150px; height: 150px; object-fit: cover" loading="lazy" />
+                <h5 class="fw-bold text-dark mb-1">Mitia Iangotiana</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card h-100 text-center border-0 rounded-4 shadow-sm team-card hover-lift">
+              <div class="card-body p-4">
+                <img src="images/t2.jpg" class="img-fluid rounded-circle mb-3 shadow"
+                  alt="Portrait du Responsable Stratégie Digitale"
+                  style="width: 150px; height: 150px; object-fit: cover" loading="lazy" />
+                <h5 class="fw-bold text-dark mb-1">Aurélie</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-white">
+      <div class="container py-lg-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <h2 class="fw-bold text-dark display-5 mb-3">Contactez-nous</h2>
+            <p class="text-muted fs-5 mb-4">
+              Prêt à amplifier votre présence en ligne ? Remplissez le
+              formulaire ci-dessous pour démarrer votre projet.
+            </p>
+            <form action="#" method="post">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="text" id="formName" class="form-control form-control-lg" required />
+                    <label class="form-label" for="formName">Nom & Prénom</label>
                   </div>
                 </div>
-                <div
-                  class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <div class="d-flex align-items-start">
-                    <i
-                      class="fas fa-envelope fa-2x text-primary me-3 flex-shrink-0"
-                    ></i>
-                    <div>
-                      <h5 class="fw-bold text-dark mb-1">
-                        Envoyez-nous un Email
-                      </h5>
-                      <p class="text-muted mb-0">
-                        rianasalohyrazafindravao@gmail.com
-                      </p>
-                    </div>
+                <div class="col-md-6">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="email" id="formEmail" class="form-control form-control-lg" required />
+                    <label class="form-label" for="formEmail">Adresse Email</label>
                   </div>
                 </div>
-                <div
-                  class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift"
-                  data-aos="fade-up"
-                  data-aos-delay="600"
-                >
-                  <div class="d-flex align-items-start">
-                    <i
-                      class="fas fa-share-alt fa-2x text-primary me-3 flex-shrink-0"
-                    ></i>
-                    <div>
-                      <h5 class="fw-bold text-dark mb-2">Suivez-nous</h5>
-                      <div class="social-icons">
-                        <a
-                          href="https://web.facebook.com/profile.php?id=61579331963153"
-                          class="btn btn-link btn-lg p-0 me-3 text-body"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a
-                          href="https://www.instagram.com/aut.hentika/"
-                          class="btn btn-link btn-lg p-0 me-3 text-body"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a
-                          href="#"
-                          class="btn btn-link btn-lg p-0 me-3 text-body"
-                          ><i class="fab fa-linkedin"></i
-                        ></a>
-                      </div>
+                <div class="col-12">
+                  <div data-mdb-input-init class="form-outline">
+                    <input type="text" id="formSubject" class="form-control form-control-lg" />
+                    <label class="form-label" for="formSubject">Sujet</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div data-mdb-input-init class="form-outline">
+                    <textarea class="form-control" id="formMessage" rows="5" required></textarea>
+                    <label class="form-label" for="formMessage">Votre Message</label>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-rounded mt-4">
+                Envoyer le Message
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <div class="d-grid gap-4">
+              <div class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="d-flex align-items-start">
+                  <i class="fas fa-phone-alt fa-2x text-primary me-3 flex-shrink-0"></i>
+                  <div>
+                    <h5 class="fw-bold text-dark mb-1">Appelez-nous</h5>
+                    <p class="text-muted mb-0">+261 33 70 737 32</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift" data-aos="fade-up"
+                data-aos-delay="400">
+                <div class="d-flex align-items-start">
+                  <i class="fas fa-envelope fa-2x text-primary me-3 flex-shrink-0"></i>
+                  <div>
+                    <h5 class="fw-bold text-dark mb-1">
+                      Envoyez-nous un Email
+                    </h5>
+                    <p class="text-muted mb-0">
+                      rianasalohyrazafindravao@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-4 rounded-4 shadow-sm border-0 contact-card hover-lift" data-aos="fade-up"
+                data-aos-delay="600">
+                <div class="d-flex align-items-start">
+                  <i class="fas fa-share-alt fa-2x text-primary me-3 flex-shrink-0"></i>
+                  <div>
+                    <h5 class="fw-bold text-dark mb-2">Suivez-nous</h5>
+                    <div class="social-icons">
+                      <a href="https://web.facebook.com/profile.php?id=61579331963153"
+                        class="btn btn-link btn-lg p-0 me-3 text-body" target="_blank" rel="noopener noreferrer"><i
+                          class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.instagram.com/aut.hentika/" class="btn btn-link btn-lg p-0 me-3 text-body"
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="btn btn-link btn-lg p-0 me-3 text-body"><i class="fab fa-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
@@ -669,89 +445,50 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="text-center bg-body-tertiary">
-      <div class="container pt-4">
-        <section class="mb-4">
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="https://web.facebook.com/profile.php?id=61579331963153"
-            role="button"
-            data-mdb-ripple-color="dark"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="https://www.instagram.com/aut.hentika/"
-            role="button"
-            data-mdb-ripple-color="dark"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </section>
       </div>
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2025 Copyright |
-        <a class="text-body fw-semibold" href="/">Authentika MDG</a>
-      </div>
-    </footer>
+    </section>
+  </main>
 
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.umd.min.js"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      const themeToggleBtn = document.getElementById("theme-toggle");
-      const icon = themeToggleBtn.querySelector("i");
+  <footer class="text-center bg-body-tertiary">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+      © 2025 Copyright |
+      <a class="text-body fw-semibold" href="/">Authentika MDG</a>
+    </div>
+  </footer>
 
-      const currentTheme = localStorage.getItem("theme");
-      if (currentTheme) {
-        document.body.classList.add(currentTheme);
-        if (currentTheme === "dark-mode") {
-          icon.classList.remove("fa-moon");
-          icon.classList.add("fa-sun");
-        }
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.2.0/mdb.umd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const icon = themeToggleBtn.querySelector("i");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      document.body.classList.add(currentTheme);
+      if (currentTheme === "dark-mode") {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
       }
+    }
 
-      themeToggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        const isDarkMode = document.body.classList.contains("dark-mode");
+    themeToggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      const isDarkMode = document.body.classList.contains("dark-mode");
 
-        if (isDarkMode) {
-          localStorage.setItem("theme", "dark-mode");
-          icon.classList.remove("fa-moon");
-          icon.classList.add("fa-sun");
-        } else {
-          localStorage.setItem("theme", "light-mode");
-          icon.classList.remove("fa-sun");
-          icon.classList.add("fa-moon");
-        }
-      });
-    </script>
-  </body>
+      if (isDarkMode) {
+        localStorage.setItem("theme", "dark-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      } else {
+        localStorage.setItem("theme", "light-mode");
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      }
+    });
+  </script>
+</body>
+
 </html>
